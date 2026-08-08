@@ -1,0 +1,98 @@
+{
+  "summary": {
+    "webAnimations": 2,
+    "cssDeclarations": 339,
+    "scrollTargets": 0,
+    "cdpAnimations": 721,
+    "canvases": 0
+  },
+  "namedAnimations": [
+    "a",
+    "b",
+    "fadeTop",
+    "fadeOutRight"
+  ],
+  "scrollTriggeredElements": 0,
+  "representativeAnimations": [
+    {
+      "type": "CSSAnimation",
+      "playState": "running",
+      "animationName": "spin",
+      "targetSelector": "span.wpcf7-spinner",
+      "targetRect": {
+        "x": 1050.234375,
+        "y": 7619.5625,
+        "width": 24,
+        "height": 24,
+        "top": 7619.5625,
+        "right": 1074.234375,
+        "bottom": 7643.5625,
+        "left": 1050.234375
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "linear",
+          "composite": "auto",
+          "transform": "rotate(0deg)",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "linear",
+          "composite": "auto",
+          "transform": "rotate(360deg)",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 1000,
+        "delay": 0,
+        "iterations": null,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    },
+    {
+      "type": "CSSAnimation",
+      "playState": "running",
+      "animationName": "fadeOutRight",
+      "targetSelector": "span.et_pb_scroll_top.et-pb-icon.et-hidden",
+      "targetRect": {
+        "x": 1899.9930419921875,
+        "y": 930,
+        "width": 50,
+        "height": 50,
+        "top": 930,
+        "right": 1949.9930419921875,
+        "bottom": 980,
+        "left": 1899.9930419921875
+      },
+      "keyframes": [
+        {
+          "offset": 0,
+          "easing": "cubic-bezier(0.77, 0, 0.175, 1)",
+          "composite": "auto",
+          "transform": "translateX(0px)",
+          "opacity": "1",
+          "computedOffset": 0
+        },
+        {
+          "offset": 1,
+          "easing": "cubic-bezier(0.77, 0, 0.175, 1)",
+          "composite": "auto",
+          "transform": "translateX(100%)",
+          "opacity": "0",
+          "computedOffset": 1
+        }
+      ],
+      "timing": {
+        "duration": 1000,
+        "delay": 0,
+        "iterations": 1,
+        "easing": "linear",
+        "direction": "normal"
+      }
+    }
+  ]
+}

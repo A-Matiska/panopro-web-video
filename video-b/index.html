@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8" />
+<title>PANOPRO — 500+ projektů</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;800;900&display=swap" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #1F3647; }
+  body { font-family: "Barlow", "Open Sans", sans-serif; }
+
+  .beat {
+    position: absolute;
+    inset: 0;
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  /* ---------- B1: 500+ count-up ---------- */
+  #b01 {
+    opacity: 1;
+    background-color: #1F3647;
+    background-image:
+      radial-gradient(circle at 50% 42%, rgba(65, 89, 123, 0.55) 0%, rgba(31, 54, 71, 0) 62%),
+      radial-gradient(rgba(255, 255, 255, 0.07) 1.5px, transparent 1.5px);
+    background-size: 100% 100%, 34px 34px;
+  }
+  #b01-logo {
+    position: absolute;
+    top: 70px;
+    left: 90px;
+    width: 180px;
+    height: auto;
+  }
+  #b01-stack { text-align: center; }
+  #b01-num-row {
+    font-weight: 900;
+    font-size: 280px;
+    line-height: 1;
+    color: #FFFFFF;
+    letter-spacing: -0.01em;
+    font-variant-numeric: tabular-nums;
+  }
+  #b01-sub {
+    margin-top: 34px;
+    font-weight: 700;
+    font-size: 44px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  #b01-rule {
+    width: 120px;
+    height: 4px;
+    background: #41597B;
+    margin: 38px auto 0;
+  }
+
+  /* ---------- B2: three reference photos ---------- */
+  #b02 { background: #F4F4F4; }
+  #b02-row {
+    display: flex;
+    gap: 48px;
+    align-items: flex-start;
+  }
+  .b02-panel { width: 560px; }
+  .b02-photo {
+    width: 560px;
+    height: 620px;
+    object-fit: cover;
+    display: block;
+    border: 4px solid #FFFFFF;
+    border-radius: 0;
+    box-shadow: 0 18px 44px rgba(31, 54, 71, 0.18);
+  }
+  .b02-chip {
+    display: inline-block;
+    margin-top: 26px;
+    background: #41597B;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 14px 30px;
+    border-radius: 2px;
+  }
+  .b02-panel { text-align: center; }
+
+  /* ---------- B3: client logo wall ---------- */
+  #b03 { background: #FFFFFF; flex-direction: column; }
+  #b03-heading {
+    font-weight: 800;
+    font-size: 96px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #1F3647;
+    margin-bottom: 70px;
+  }
+  #b03-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 420px);
+    grid-template-rows: repeat(2, 240px);
+    gap: 32px;
+  }
+  .b03-cell {
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 34px;
+  }
+  .b03-cell img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* ---------- B4: stats + CTA ---------- */
+  #b04 { background: #41597B; flex-direction: column; }
+  #b04-logo { width: 340px; height: auto; margin-bottom: 78px; }
+  #b04-stats {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 46px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 84px;
+  }
+  .b04-dot {
+    width: 12px;
+    height: 12px;
+    background: #FFFFFF;
+    border-radius: 0;
+    transform: rotate(45deg);
+  }
+  #b04-cta {
+    background: #FFFFFF;
+    color: #41597B;
+    font-weight: 800;
+    font-size: 46px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    padding: 24px 64px;
+    border-radius: 2px;
+  }
+  #b04-url {
+    margin-top: 54px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 0.22em;
+  }
+</style>
+</head>
+<body>
+
+<div data-composition-id="video" data-width="1920" data-height="1080" data-start="0" data-duration="13" style="position:relative;width:1920px;height:1080px;overflow:hidden;background:#1F3647;">
+
+  <!-- B1 · 0–3 s · 500+ count-up -->
+  <div class="beat" id="b01">
+    <img id="b01-logo" src="capture/assets/panopro.png" alt="PANOPRO" data-layout-ignore />
+    <div id="b01-stack">
+      <div id="b01-num-row"><span id="b01-num">0</span><span>+</span></div>
+      <div id="b01-sub">Dokon&#268;en&#253;ch projekt&#367;</div>
+      <div id="b01-rule" data-layout-ignore></div>
+    </div>
+  </div>
+
+  <!-- B2 · 3–6.5 s · three reference photos -->
+  <div class="beat" id="b02">
+    <div id="b02-row">
+      <div class="b02-panel" id="b02-p1">
+        <img class="b02-photo" src="capture/assets/web-2026-reference-zs-liberec06b.jpg" alt="Z&#352; Liberec" />
+        <span class="b02-chip">Z&#352; Liberec</span>
+      </div>
+      <div class="b02-panel" id="b02-p2">
+        <img class="b02-photo" src="capture/assets/web-2026-reference-hala-havirov-04a.jpg" alt="Hala Hav&#237;&#345;ov" />
+        <span class="b02-chip">Hala Hav&#237;&#345;ov</span>
+      </div>
+      <div class="b02-panel" id="b02-p3">
+        <img class="b02-photo" src="capture/assets/web-2026-reference-rd-krkonose-03a.jpg" alt="RD Krkono&#353;e" />
+        <span class="b02-chip">RD Krkono&#353;e</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- B3 · 6.5–10 s · client logo wall -->
+  <div class="beat" id="b03">
+    <div id="b03-inner" style="display:flex;flex-direction:column;align-items:center;">
+      <div id="b03-heading">D&#367;v&#283;&#345;uj&#237; n&#225;m</div>
+      <div id="b03-grid">
+        <div class="b03-cell"><img src="capture/assets/02552042-980x515.jpeg" alt="N&#225;rodn&#237; pam&#225;tkov&#253; &#250;stav" /></div>
+        <div class="b03-cell"><img src="capture/assets/1280px-vut-cz-svg-480x223.png" alt="VUT Brno" /></div>
+        <div class="b03-cell"><img src="capture/assets/logo-pt-480x244.jpg" alt="Pam&#225;tn&#237;k Terez&#237;n" /></div>
+        <div class="b03-cell"><img src="capture/assets/logo-mcely-mobile-480x237.jpg" alt="Chateau Mcely" /></div>
+        <div class="b03-cell"><img src="capture/assets/mendelu-logo-2019-300x224.jpg" alt="Mendelova univerzita" /></div>
+        <div class="b03-cell"><img src="capture/assets/univerzita-palackeho-v-olomouci-logo-480.png" alt="Univerzita Palack&#233;ho v Olomouci" /></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- B4 · 10–13 s · stats + CTA -->
+  <div class="beat" id="b04">
+    <div id="b04-inner" style="display:flex;flex-direction:column;align-items:center;">
+      <img id="b04-logo" src="capture/assets/panopro.png" alt="PANOPRO" />
+      <div id="b04-stats">
+        <span>5 mm p&#345;esnost</span>
+        <span class="b04-dot" data-layout-ignore></span>
+        <span>Mra&#269;no do 5 dn&#367;</span>
+      </div>
+      <div id="b04-cta">Kalkulace zdarma</div>
+      <div id="b04-url">panopro.cz</div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  function $(id) { return document.getElementById(id); }
+
+  var b01 = $("b01"), b02 = $("b02"), b03 = $("b03"), b04 = $("b04");
+  var num = $("b01-num");
+  var stack = $("b01-stack"), sub = $("b01-sub"), rule = $("b01-rule"), logo1 = $("b01-logo");
+  var p1 = $("b02-p1"), p2 = $("b02-p2"), p3 = $("b02-p3"), row2 = $("b02-row");
+  var heading = $("b03-heading"), inner3 = $("b03-inner");
+  var cells = document.querySelectorAll("#b03-grid .b03-cell");
+  var inner4 = $("b04-inner"), logo4 = $("b04-logo"), stats = $("b04-stats"), cta = $("b04-cta"), url4 = $("b04-url");
+  if (!b01 || !b02 || !b03 || !b04 || !num) { return; }
+
+  window.__timelines = window.__timelines || {};
+  var tl = gsap.timeline({ paused: true });
+
+  /* ===== B1 · 0–3 s ===== */
+  tl.set(b01, { opacity: 1 }, 0);
+  tl.fromTo(b01, { scale: 1.012 }, { scale: 1, duration: 0.25, ease: "power2.out" }, 0);
+
+  tl.fromTo(logo1, { y: -30 }, { y: 0, duration: 0.5, ease: "power4.out" }, 0);
+  tl.fromTo(stack, { y: 60 }, { y: 0, duration: 0.6, ease: "power4.out" }, 0);
+
+  /* deterministic count-up: object tween driven by timeline progress (seek-safe) */
+  var counter = { v: 0 };
+  tl.to(counter, {
+    v: 500,
+    duration: 1.9,
+    ease: "power2.out",
+    onUpdate: function () { num.textContent = String(Math.round(counter.v)); }
+  }, 0.2);
+  tl.fromTo(num, { scale: 1 }, { scale: 1.04, duration: 0.18, ease: "back.out(1.7)" }, 2.1);
+  tl.to(num, { scale: 1, duration: 0.22, ease: "power2.out" }, 2.28);
+
+  tl.fromTo(sub, { opacity: 0, y: 34 }, { opacity: 1, y: 0, duration: 0.55, ease: "expo.out" }, 0.55);
+  tl.fromTo(rule, { scaleX: 0 }, { scaleX: 1, duration: 0.5, ease: "power4.out" }, 0.8);
+  /* hold motion: camera dolly on the whole content stack */
+  tl.fromTo(stack, { scale: 1 }, { scale: 1.06, duration: 2.3, ease: "none" }, 0.7);
+
+  tl.set(b01, { opacity: 0 }, 3);
+
+  /* ===== B2 · 3–6.5 s ===== */
+  tl.set(b02, { opacity: 1 }, 3);
+  tl.fromTo(b02, { scale: 1.012 }, { scale: 1, duration: 0.25, ease: "power2.out" }, 3);
+
+  tl.fromTo([p1, p2, p3],
+    { y: 80 },
+    { y: 0, duration: 0.6, ease: "expo.out", stagger: 0.12 }, 3);
+  /* hold motion: slow dolly-in on the photo row */
+  tl.fromTo(row2, { scale: 1 }, { scale: 1.06, duration: 2.7, ease: "none" }, 3.75);
+
+  tl.set(b02, { opacity: 0 }, 6.5);
+
+  /* ===== B3 · 6.5–10 s ===== */
+  tl.set(b03, { opacity: 1 }, 6.5);
+  tl.fromTo(b03, { scale: 1.012 }, { scale: 1, duration: 0.25, ease: "power2.out" }, 6.5);
+
+  tl.fromTo(heading, { y: 40 }, { y: 0, duration: 0.5, ease: "power4.out" }, 6.5);
+  tl.fromTo(cells,
+    { opacity: 0, y: 30 },
+    { opacity: 1, y: 0, duration: 0.45, ease: "power4.out", stagger: 0.1 }, 6.6);
+  /* hold motion: gentle dolly on the whole wall */
+  tl.fromTo(inner3, { scale: 1 }, { scale: 1.05, duration: 2.4, ease: "none" }, 7.55);
+
+  tl.set(b03, { opacity: 0 }, 10);
+
+  /* ===== B4 · 10–13 s ===== */
+  tl.set(b04, { opacity: 1 }, 10);
+  tl.fromTo(b04, { scale: 1.012 }, { scale: 1, duration: 0.25, ease: "power2.out" }, 10);
+
+  tl.fromTo(logo4, { y: -40 }, { y: 0, duration: 0.55, ease: "power4.out" }, 10);
+  tl.fromTo(stats, { opacity: 0, scale: 0.94 }, { opacity: 1, scale: 1, duration: 0.45, ease: "power4.out" }, 10.25);
+  tl.fromTo(cta, { opacity: 0, scale: 0.8 }, { opacity: 1, scale: 1, duration: 0.55, ease: "back.out(1.7)" }, 10.55);
+  tl.fromTo(url4, { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.5, ease: "expo.out" }, 10.85);
+  /* hold motion: dolly on closing stack until end of video */
+  tl.fromTo(inner4, { scale: 1 }, { scale: 1.05, duration: 1.55, ease: "none" }, 11.45);
+
+  window.__timelines["video"] = tl;
+})();
+</script>
+
+</body>
+</html>

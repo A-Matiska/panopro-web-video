@@ -1,0 +1,246 @@
+[p] Záleží nám na vašem soukromí
+[p] Pomocí cookies vylepšujeme příjemnost prohlížení, nabízíme na míru přizpůsobené reklamy či obsah a analyzujeme návštěvnost stránky. Kliknutím na „Přijmout vše“ vyjadřujete souhlas s tím, jak cookies používáme.
+[button] Přizpůsobit
+[button] Odmítnout
+[button] Přijmout vše
+[div] Powered by
+[a] 3D Virtuální prohlídky
+[a] Reference
+[a] Partneři
+[a] Pasport
+[a] 3D Virtuální prohlídky
+[a] Cena
+[a] FAQ
+[a] Reference
+[a] Partneři
+[a] Kontakt
+[a] 3D Virtuální prohlídky
+[a] Reference
+[a] Partneři
+[a] Pasport
+[a] 3D Virtuální prohlídky
+[a] Cena
+[a] FAQ
+[a] Reference
+[a] Partneři
+[a] Kontakt
+[h1] Pasport stavby
+[p] dokumentace skutečného stavu objektu
+[p] Vytváříme pasporty objektů, které šetří čas, peníze a zjednodušují správu nemovitostí. Od průmyslových areálů po památkové objekty. Pokud potřebujete přesný digitální otisk reality, jsme tu pro vás.
+[h2] Jak vzniká pasport stavby?
+[p] Podívejte se, jak pracujeme a co všechno je potřeba udělat než dostanete složku s výkresy vaší budovy.
+[h2] 3D Laserové skenování
+[p] Nejprve naskenujeme objekt pomocí statických skenerů, kdy prvotním výstupem je
+[strong] mračno bodů
+[p] , s přesností skenování 5 mm.
+[span] Mračno bodů
+[span] Mračno bodů si lze představit jako soubor bodů s určenou barvou a polohou v rámci souřadnic XYZ. Mračno dál zpracovává projektant a je nezbytné pro přípravu 3D i 2D výstupů. Formát mračna dodáváme
+[strong] .XYZ
+[strong] .OBJ
+[span] nebo
+[strong] .E57
+[h2] 3D model
+[p] 3D model dodáváme ve formátech
+[strong] .RVT
+[strong] .PLN
+[p] nebo
+[strong] .IFC
+[p] , dle potřeby. Výhodou je, že do takového modelu je projektant schopen vždy zakreslit změny a Vy máte permanentně aktuální podklady pro stavební úpravy.
+[span] 2D výkresy
+[span] 2D výkresy jsou finálním výstupem naší práce. Připravujeme dokumentaci podle běžných standardů – pohledy, řezy a půdorysy, které přesně vycházejí ze zaměřených dat. Výkresy dodáváme ve formátech
+[strong] .PDF
+[strong] .DWG
+[h4] Jaký pasport potřebujete?
+[strong] Mračno bodů
+[li] 3D laserové zaměření pro další práci projektanta.
+[li] Standardní formáty .XYZ, .OBJ nebo .E57 dle zadání klienta
+[p] Rodinný dům, Havířov
+[p] Mračno bodů
+[strong] 3D model
+[li] 3D model pro další práci projektanta.
+[li] Detailnost prvků a vnitřní vybavení místností dle požadavků zákazníka.
+[li] Formáty .IFC a .RVT
+[p] 3D model
+[strong] Pasport BYTU
+[li] Stavební výkresy dle vyhlášky 131/2024 Sb.
+[li] Formáty .PDF a .DWG
+[p] Byt 3+1, Brno
+[p] 2D VÝKRESY
+[strong] Pasport BUDOVY
+[li] 3D model pro další práci projektanta.
+[li] Stavební výkresy dle vyhlášky 131/2024 Sb.
+[li] Formáty .PDF a .DWG, v případě modelu .IFC a .RVT
+[p] 3D model + 2D výkresy PRO
+[a] do 5 dnů od skenování
+[a] více informací
+[a] chci mračno
+[p] Rodinný dům, Havířov
+[p] Mračno bodů
+[a] do 30 - 45 dnů od skenování
+[a] více informací
+[a] chci 3D model
+[a] Malostranská mostecká věž
+[p] 3D model
+[a] do 30 dnů od skenování
+[a] více informací
+[a] chci pasport
+[p] Byt 3+1, Brno
+[p] 2D VÝKRESY
+[a] od 30 dnů dle rozsahu projektu
+[a] více informací
+[a] chci pasport
+[a] Základní škola, Liberec
+[p] 3D model + 2D výkresy PRO
+[h4] Jak může vypadat výsledek?
+[h4] Základní škola
+[p] pasport stavby
+[h4] Sportovní hala
+[p] pasport stavby
+[h4] Rodinný dům
+[p] pasport stavby
+[strong] ČTĚTE
+[p] články
+[a] Pasport stavby jako konkurenční výhoda: Proč realitní kanceláře, které ho kombinují s 3D prohlídkou, prodávají o 30 % rychleji
+[span] 28. 5. 2026
+[p] Kupující dnes rozhodují o prohlídce nemovitosti ještě před tím, než vstoupí do...
+[a] číst více
+[a] Pasport stavby Praha
+[span] 11. 3. 2026
+[p] Potřebujete pasport stavby v Praze, ale nevíte, kde začít? Nejste sami. Po...
+[a] číst více
+[a] Kdo dělá pasport stavby | Tým PANOPRO
+[span] 19. 3. 2026
+[p] Za každým pasportem, který z PANOPRO vychází, stojí konkrétní lidé — s letitou...
+[a] číst více
+[a] Pasport stavby Brno: Jak na digitalizaci budov
+[span] 10. 2. 2026
+[p] Plánujete rekonstrukci historického domu v centru Brna, nebo potřebujete...
+[a] číst více
+[a] Jak pasport domu přispívá k bezpečnosti budovy?
+[span] 19. 3. 2026
+[p] Když se řekne pasport domu, většina lidí si vybaví papíry pro stavební úřad...
+[a] číst více
+[a] Jak vzniká pasport stavby krok za krokem
+[span] 10. 2. 2026
+[p] Potřebujete zlegalizovat stavbu, plánujete rekonstrukci nebo prodej...
+[a] číst více
+[a] DALŠÍ ČLÁNKY
+[span] Video přehrávač
+[span] 00:00
+[span] 00:00
+[span] 00:06
+[span] Použitím šipek nahoru/dolů zvýšíte nebo snížíte úroveň hlasitosti.
+[h2] Virtuální prohlídky
+[p] Předejte zážitek ne jen fotku
+[span] Video přehrávač
+[span] 00:01
+[span] 00:00
+[span] 00:11
+[span] Použitím šipek nahoru/dolů zvýšíte nebo snížíte úroveň hlasitosti.
+[h2] Interaktivní mapy
+[p] krajina jako na dlani
+[h4] Když virtuálně, tak moderně
+[p] Posouváme hranice digitální prezentace. Interaktivní zážitek na úrovni 21. století, který prodává za vás.
+[a] virtuální prohlídky
+[a] Interaktivní mapy
+[a] dron
+[h3] Střední průmyslová škola elektrotechnická, Praha 10
+[p] 15. 4. 2021
+[h3] Opava, Slezská univerzita FPF Hauerova
+[p] 31. 1. 2022
+[h3] Pohodová Škola  – Ostrava
+[p] 4. 11. 2022
+[h3] ZUŠ Kyjov
+[p] 2. 6. 2022
+[h3] SŠA Holice – budova H Cyklo
+[p] 16. 3. 2021
+[h3] SŠA Ústí nad Orlicí, hlavní budova
+[p] 16. 3. 2021
+[h3] ZUŠ Leoše Janáčka Frýdlant nad Ostravicí
+[p] 21. 12. 2023
+[h3] ZŠ Rychvald
+[p] 4. 1. 2022
+[h3] OFTEX Nymburk
+[p] 7. 4. 2021
+[h3] Horácka galerie – Nové Město na Moravě
+[p] 4. 1. 2022
+[h3] SOU Uherský Brod – Odb. výcvik
+[p] 7. 3. 2022
+[h3] Vila Stiassni
+[p] 9. 4. 2021
+[h3] SŠ Elektrotechnická Ostrava
+[p] 5. 12. 2021
+[h3] NEOVIZE Poprad
+[p] 11. 4. 2023
+[h3] Umělecko-průmyslová škola, Frýdek-místek
+[p] 17. 8. 2021
+[h3] SPŠ Ostrava-Vítkovice
+[p] 27. 4. 2021
+[h3] VOŠ a SOŠ zemědělsko-technická Bystřice n.P. 2
+[p] 3. 3. 2021
+[h3] Hotel Majestic
+[p] 12. 8. 2021
+[h3] Střední průmyslová škola potravinářství Pardubice
+[p] 25. 11. 2021
+[h3] Střední Průmyslová Škola Stavební Ostrava
+[p] 27. 4. 2022
+[h3] BB Cyklosport Česká
+[p] 14. 4. 2021
+[h3] Oftex Hradec Králové
+[p] 11. 8. 2021
+[h3] Husova Knihovna, Říčany,  Komenského Náměstí
+[p] 14. 6. 2022
+[h3] TUL univerzitní knihovna
+[p] 26. 11. 2021
+[h3] SŠ, Odry – Sokolovská 1
+[p] 27. 8. 2021
+[h3] Moderní vozy, DPO
+[p] 12. 6. 2023
+[h3] Obchodní akademie a hotelová škola Havlíčkův Brod
+[p] 9. 6. 2022
+[h3] Apartmány Ester – Rokytnice nad Jizerou
+[p] 25. 3. 2021
+[h3] FAVU VUT Brno U9
+[p] 18. 6. 2021
+[h3] Oblastní muzeum Louny
+[p] 16. 1. 2024
+[h3] Bistro Drogérka
+[p] 26. 9. 2023
+[h3] Základní škola Spojenců 1408
+[p] 16. 4. 2021
+[h3] Mateřská škola Záhorského, Praha 5
+[p] 15. 4. 2021
+[h3] Horegas Trutnov Volanecká
+[p] 25. 7. 2022
+[h3] Gymnázium Ústí nad Orlicí
+[p] 16. 4. 2021
+[h3] Knihovna zdravotnických studií – Univerzitní knihovna
+[p] 15. 4. 2021
+[h3] Arcibiskupský seminář v Praze
+[p] 25. 3. 2021
+[h3] Hladovy Pes –  Ostrava
+[p] 30. 9. 2022
+[h3] Decoland Karlín
+[p] 11. 8. 2021
+[h3] Skalní obydlí Muzeum Mělník
+[p] 9. 4. 2024
+[strong] SPOLUPRACUJEME
+[strong] PanoPro
+[p] v médiích
+[strong] POPTEJTE
+[p] naše služby
+[span] VOLEJTE
+[p] +420 705 783 783
+[a] Rychlý kontakt
+[span] 705 783 783
+[span] info@panopro.cz
+[a] Naše články
+[a] Virtuální prohlídka školy: Jak přilákat studenty ještě před dnem otevřených dveří
+[a] Pasport stavby jako konkurenční výhoda: Proč realitní kanceláře, které ho kombinují s 3D prohlídkou, prodávají o 30 % rychleji
+[a] Matterport vs. interaktivní mapa: co vybrat pro váš prostor?
+[div] This site is protected by reCAPTCHA and the Google
+[a] Privacy Policy
+[a] Terms of Service
+[a] HTML Snippets
+[div] Powered By :
+[a] XYZScripts.com

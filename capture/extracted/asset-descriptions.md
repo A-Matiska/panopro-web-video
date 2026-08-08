@@ -1,0 +1,247 @@
+# Asset Descriptions
+
+One line per file. Read this instead of opening every image individually.
+
+To find a specific brand or icon, **grep this file for the brand name in the description text** (e.g. `grep -i 'autodesk' asset-descriptions.md`). The Gemini Vision captions identify what's actually in each file — that's the agent's selector.
+
+The `logo-<hash>.svg` filename prefix is a cheap structural hint (DOM said this SVG was inside a `<header>`, home-link `<a>`, or had an aria-label matching the page brand). It is NOT a content claim — many `logo-*` files are nav icons or decorative shapes. Trust the captions, not the filename prefix.
+
+- Im-Zaznam-01.mp4 — [video] motion clip
+- Vp-Zaznam-01.mp4 — [video] motion clip
+- 02552042-980x515.jpeg — 23KB, "NPÚ", section: "Pasport stavby"
+- 1280px-vut-cz-svg-480x223.png — 13KB, 1280px vut cz svg 480x223
+- 2d-vkresy-pasportu-stavby-pdorys-a-dokum.jpg — 63KB, 2d vkresy pasportu stavby pdorys a dokum
+- 3d-icon-3d-480x480.jpg — 12KB, 3d icon 3d 480x480
+- 3d-icon-3d.jpg — 10KB, 3d icon 3d
+- 3d-icon-dron-480x481.jpg — 12KB, 3d icon dron 480x481
+- 3d-icon-dron.jpg — 10KB, 3d icon dron
+- 3d-icon-im-480x481.jpg — 13KB, 3d icon im 480x481
+- 3d-icon-im.jpg — 11KB, 3d icon im
+- 3d-icon-poptavka-02-480x265.jpg — 11KB, 3d icon poptavka 02 480x265
+- 3d-laserov-skenovn-objektu-pro-pasport-s.jpg — 29KB, 3d laserov skenovn objektu pro pasport s
+- 3d-model-domu-ve-formtu-rvt-vstup-paspor.jpg — 51KB, 3d model domu ve formtu rvt vstup paspor
+- adobestock-190412449-400x250.jpg — 28KB, adobestock 190412449 400x250
+- adobestock-190412449.jpg — 61KB, adobestock 190412449
+- akademie-vd-r.png — 38KB, akademie vd r
+- angelo-480x270.png — 39KB, "Orea Hotel Angelo", section: "Pasport stavby"
+- apartmny-ester-rokytnice-nad-jizerou.jpg — 35KB, apartmny ester rokytnice nad jizerou
+- arcibiskupsk-semin-v-praze.jpg — 40KB, arcibiskupsk semin v praze
+- avcr-cas-zakladni-znacka-rgb-480x198.png — 30KB, avcr cas zakladni znacka rgb 480x198
+- bam-brno.png — 24KB, bam brno
+- banner-pasport-2025-hover05-tab.jpg — 103KB, banner pasport 2025 hover05 tab
+- banner-pasport-2025-hover08-mob.jpg — 31KB, banner pasport 2025 hover08 mob
+- bb-cyklosport-esk.jpg — 53KB, bb cyklosport esk
+- besip.png — 72KB, besip
+- bez-nazvu-15.jpg — 768KB, bez nazvu 15
+- bez-nazvu-38.jpg — 1241KB, bez nazvu 38
+- bez-nazvu-39.jpg — 669KB, bez nazvu 39
+- bez-nazvu-66.jpg — 970KB, bez nazvu 66
+- bez-nazvu-8.jpg — 1031KB, bez nazvu 8
+- bistro-drogrka.jpg — 46KB, bistro drogrka
+- bistro.jpg — 474KB, bistro
+- blesk-480x136.jpg — 11KB, "blesk", section: "Pasport stavby"
+- blesk.jpg — 14KB, "blesk", section: "Pasport stavby"
+- brno-my-city.jpg — 21KB, brno my city
+- ctlogo.jpg — 12KB, "ctlogo", section: "Pasport stavby"
+- decoland-karln.png — 333KB, decoland karln
+- esk-filharmonie.png — 14KB, esk filharmonie
+- favicon.png — 3KB, favicon
+- favu-vut-brno-u9.jpg — 34KB, favu vut brno u9
+- filharmonie-brno.png — 11KB, filharmonie brno
+- gymnzium-st-nad-orlic.jpg — 49KB, gymnzium st nad orlic
+- hero-10.jpg — 38KB, hero 10
+- hero-79.png — 554KB, hero 79
+- hero-8.jpg — 47KB, hero 8
+- hi-mk-logo-hiltonbrandlogo-480x301.jpg — 26KB, hi mk logo hiltonbrandlogo 480x301
+- hilton-old-town.png — 13KB, hilton old town
+- hilton.jpg — 49KB, hilton
+- hladovy-pes-ostrava.png — 332KB, hladovy pes ostrava
+- horcka-galerie-nov-msto-na-morav.jpg — 60KB, horcka galerie nov msto na morav
+- horegas-trutnov-volaneck.jpg — 48KB, horegas trutnov volaneck
+- hotel-chateau-mcely.jpg — 120KB, hotel chateau mcely
+- hotel-majestic.png — 375KB, hotel majestic
+- hotel-marriott.png — 27KB, hotel marriott
+- hotel-orlk-microsite.png — 23KB, hotel orlk microsite
+- hotel-pupp.jpg — 26KB, hotel pupp
+- husova-knihovna-any-komenskho-nmst.jpg — 45KB, husova knihovna any komenskho nmst
+- im-obrazek-01.jpg — 160KB, im obrazek 01
+- image-132.jpg — 13KB, image 132
+- image-134.jpg — 14KB, image 134
+- image-199.png — 24KB, image 199
+- iq-landia.jpg — 17KB, iq landia
+- irozhlas-480x136.jpg — 11KB, "irozhlas", section: "Pasport stavby"
+- irozhlas.jpg — 15KB, "irozhlas", section: "Pasport stavby"
+- jak-pasport-domu-pispv-k-bezpenosti-budo.jpg — 17KB, jak pasport domu pispv k bezpenosti budo
+- jak-vznik-pasport-stavby-krok-za-krokem.jpg — 15KB, jak vznik pasport stavby krok za krokem
+- kdo-dela-pasport-stavby.jpg — 58KB, kdo dela pasport stavby
+- kdo-dl-pasport-stavby-tm-panopro.jpg — 20KB, kdo dl pasport stavby tm panopro
+- knihovna-zdravotnickch-studi-univerzitn-.jpg — 43KB, knihovna zdravotnickch studi univerzitn 
+- krom.jpg — 12KB, krom
+- litomericko.jpg — 13KB, "litomericko", section: "Pasport stavby"
+- logo-300x252.png — 16KB, "Hilton Old Town", section: "Pasport stavby"
+- logo-480x78.png — 11KB, "Hotel Orlík – Microsite", section: "Pasport stavby"
+- logo-9fb096f0b8-480x52.png — 14KB, logo 9fb096f0b8 480x52
+- logo-dostihovyspolek-480x168.jpg — 22KB, logo dostihovyspolek 480x168
+- logo-mcely-mobile-480x237.jpg — 27KB, "Hotel Chateau Mcely", section: "Pasport stavby"
+- logo-muzeum-tz-300x64.png — 13KB, logo muzeum tz 300x64
+- logo-pt-480x244.jpg — 26KB, "Památník Terezín", section: "Pasport stavby"
+- logo-sh-mikulcice-cmyk-480x130.jpg — 568KB, logo sh mikulcice cmyk 480x130
+- logo-vertical-web-480x86.png — 19KB, logo vertical web 480x86
+- m-muni-jvs2-1200x600-3353596040-480x240.jpg — 10KB, m muni jvs2 1200x600 3353596040 480x240
+- malostranska-mostecka-vez.jpg — 22KB, malostranska mostecka vez
+- malostranska-mostecka-vez2-480x328.jpg — 21KB, malostranska mostecka vez2 480x328
+- malostranska-mostecka-vez2.jpg — 22KB, malostranska mostecka vez2
+- mapo-plasma.png — 13KB, mapo plasma
+- masarykova-univerzita.jpg — 24KB, masarykova univerzita
+- matesk-kola-zhorskho-praha-5.jpg — 43KB, matesk kola zhorskho praha 5
+- mendelova-univerzita-v-brn.jpg — 49KB, mendelova univerzita v brn
+- mendelu-logo-2019-300x224.jpg — 17KB, mendelu logo 2019 300x224
+- ministerstvokultury.jpg — 11KB, "ministerstvokultury", section: "Pasport stavby"
+- modern-vozy-dpo.jpg — 43KB, modern vozy dpo
+- mrano-bod-budovy-ze-3d-skenovn-podklad-p.jpg — 35KB, mrano bod budovy ze 3d skenovn podklad p
+- msto-esk-tn.jpg — 12KB, msto esk tn
+- msto-hranice.jpg — 10KB, msto hranice
+- msto-olomouc.jpg — 17KB, msto olomouc
+- muzeum-tineckch-elezren-a-msta-tince.png — 27KB, muzeum tineckch elezren a msta tince
+- muzeum-vetern.png — 45KB, muzeum vetern
+- nahled-42.png — 2130KB, "Hladovy Pes –  Ostrava", section: "Pasport stavby", above fold
+- nahled1-4.png — 1318KB, "Pohodová Škola  – Ostrava", section: "Pasport stavby"
+- natuzzi.gif — 28KB, natuzzi
+- nemocnice-esk-krumlov.png — 14KB, nemocnice esk krumlov
+- neovize-poprad.jpg — 31KB, neovize poprad
+- neovize.png — 26KB, neovize
+- novinky-cz.jpeg — 13KB, "novinky-cz", section: "Pasport stavby"
+- nrodn-muzeum-esko-slovensk-vstava.png — 24KB, nrodn muzeum esko slovensk vstava
+- nrodn-zemdlsk-muzeum.png — 22KB, nrodn zemdlsk muzeum
+- nzmlogo.jpg — 13KB, nzmlogo
+- obchodn-akademie-a-hotelov-kola-havlkv-b.jpg — 36KB, obchodn akademie a hotelov kola havlkv b
+- obec-morvka.jpg — 50KB, obec morvka
+- obecn-dm.png — 47KB, obecn dm
+- objekty-klubu-kultury-uherskho-hradit.png — 13KB, objekty klubu kultury uherskho hradit
+- oblastn-muzeum-louny.jpg — 34KB, oblastn muzeum louny
+- oftex-hradec-krlov.png — 291KB, oftex hradec krlov
+- oftex-nymburk.jpg — 34KB, oftex nymburk
+- opava-slezsk-univerzita-fpf-hauerova.png — 193KB, opava slezsk univerzita fpf hauerova
+- orea-1-300x129.png — 19KB, "Orea hotel Brno", section: "Pasport stavby"
+- orea-hotel-angelo.png — 81KB, "Orea Hotel Angelo", section: "Pasport stavby"
+- orea-hotel-brno.png — 29KB, orea hotel brno
+- orea-hotels.png — 11KB, orea hotels
+- pamtnk-antonna-dvoka.png — 12KB, pamtnk antonna dvoka
+- pamtnk-nrodnho-psemnictv.jpg — 106KB, pamtnk nrodnho psemnictv
+- pamtnk-terezn.jpg — 62KB, pamtnk terezn
+- panopro.png — 15KB, panopro
+- pasport-budovy-2026-480x479.jpg — 25KB, pasport budovy 2026 480x479
+- pasport-bytu-04-480x351.jpg — 20KB, pasport bytu 04 480x351
+- pasport-bytu-04-980x717.jpg — 61KB, pasport bytu 04 980x717
+- pasport-bytu-2026-480x480.jpg — 24KB, pasport bytu 2026 480x480
+- pasport-pointcloud-01-480x327.jpg — 46KB, pasport pointcloud 01 480x327
+- pasport-pointcloud-01-980x668.jpg — 191KB, pasport pointcloud 01 980x668
+- pasport-stavby-brno-jak-na-digitalizaci-.jpg — 22KB, pasport stavby brno jak na digitalizaci 
+- pasport-stavby-praha.jpg — 14KB, pasport stavby praha
+- pasport-stavby.jpg — 37KB, pasport stavby
+- pasportbudovy2026.jpg — 19KB, pasportbudovy2026
+- pasportbytu04.jpg — 75KB, pasportbytu04
+- pasportbytu2026.jpg — 18KB, pasportbytu2026
+- pasportpointcloud01.jpg — 276KB, pasportpointcloud01
+- patrioti-msk.png — 23KB, patrioti msk
+- pnp-logo-250x300.jpg — 22KB, "Památník národního písemnictví", section: "Pasport stavby"
+- pohodov-kola-ostrava.png — 310KB, pohodov kola ostrava
+- polar-tv-480x136.png — 31KB, polar tv 480x136
+- polartv.png — 12KB, polartv
+- post-10599-page.jpg — 45KB, post 10599 page
+- reference-3dmodel2dvykresy-pro-480x327.jpg — 23KB, reference 3dmodel2dvykresy pro 480x327
+- reference3dmodel2dvykresy-pro.jpg — 63KB, reference3dmodel2dvykresy pro
+- rychv.png — 1052KB, "ZŠ Rychvald", section: "Pasport stavby", above fold
+- s-elektrotechnick-ostrava.png — 316KB, s elektrotechnick ostrava
+- s-odry-sokolovsk-1.jpg — 45KB, s odry sokolovsk 1
+- sa-holice-budova-h-cyklo.jpg — 43KB, sa holice budova h cyklo
+- sa-st-nad-orlic-hlavn-budova.jpg — 42KB, sa st nad orlic hlavn budova
+- skaln-obydl-muzeum-mlnk.jpg — 52KB, skaln obydl muzeum mlnk
+- slezsk-univerzita-v-opav.jpg — 10KB, slezsk univerzita v opav
+- slovansk-hradit-v-mikulicch.jpg — 589KB, slovansk hradit v mikulicch
+- snimek-obrazovky-2021-03-16-094757.jpg — 181KB, snimek obrazovky 2021 03 16 094757
+- snimek-obrazovky-2021-03-16-110311.jpg — 202KB, snimek obrazovky 2021 03 16 110311
+- snimek-obrazovky-2021-03-25-140227.jpg — 193KB, snimek obrazovky 2021 03 25 140227
+- snimek-obrazovky-2021-03-25-151159.jpg — 217KB, snimek obrazovky 2021 03 25 151159
+- snimek-obrazovky-2021-04-07-151737.jpg — 216KB, snimek obrazovky 2021 04 07 151737
+- snimek-obrazovky-2021-04-09-094822.jpg — 191KB, snimek obrazovky 2021 04 09 094822
+- snimek-obrazovky-2021-04-14-113836.jpg — 270KB, snimek obrazovky 2021 04 14 113836
+- snimek-obrazovky-2021-04-15-083451.jpg — 263KB, snimek obrazovky 2021 04 15 083451
+- snimek-obrazovky-2021-04-15-141533.jpg — 252KB, snimek obrazovky 2021 04 15 141533
+- snimek-obrazovky-2021-04-15-154407.jpg — 315KB, snimek obrazovky 2021 04 15 154407
+- snimek-obrazovky-2021-04-16-090858.jpg — 168KB, snimek obrazovky 2021 04 16 090858
+- snimek-obrazovky-2021-04-16-134244.jpg — 293KB, snimek obrazovky 2021 04 16 134244
+- snimek-obrazovky-2021-04-27-124223.jpg — 274KB, snimek obrazovky 2021 04 27 124223
+- snimek-obrazovky-2021-06-18-084444.jpg — 140KB, snimek obrazovky 2021 06 18 084444
+- snimek-obrazovky-2021-08-27-122309.jpg — 205KB, snimek obrazovky 2021 08 27 122309
+- snimek-obrazovky-2022-01-04-144232.jpg — 652KB, snimek obrazovky 2022 01 04 144232
+- snimek-obrazovky-2022-01-31-v-6-31-12.png — 3773KB, snimek obrazovky 2022 01 31 v 6 31 12
+- snimek-obrazovky-2022-03-07-v-13-58-08.png — 8034KB, snimek obrazovky 2022 03 07 v 13 58 08
+- snimek-obrazovky-2023-04-11-150253.jpg — 294KB, snimek obrazovky 2023 04 11 150253
+- snimek-obrazovky-2023-06-12-151522.jpg — 331KB, snimek obrazovky 2023 06 12 151522
+- snimek-obrazovky-2023-12-21-124034.jpg — 353KB, snimek obrazovky 2023 12 21 124034
+- snimek-obrazovky-2024-01-16-204857.jpg — 249KB, snimek obrazovky 2024 01 16 204857
+- snimek-obrazovky-2024-04-09-101404.jpg — 445KB, snimek obrazovky 2024 04 09 101404
+- sou-uhersk-brod-odb-vcvik.png — 335KB, sou uhersk brod odb vcvik
+- sp-ostrava-vtkovice.jpg — 68KB, sp ostrava vtkovice
+- stars-karvin.jpg — 37KB, stars karvin
+- stedn-prmyslov-kola-elektrotechnick-prah.jpg — 43KB, stedn prmyslov kola elektrotechnick prah
+- stedn-prmyslov-kola-potravinstv-pardubic.png — 290KB, stedn prmyslov kola potravinstv pardubic
+- stedn-prmyslov-kola-stavebn-ostrava.jpg — 35KB, stedn prmyslov kola stavebn ostrava
+- strnice.jpg — 32KB, strnice
+- strojrensk-zkuebn-stav.png — 50KB, strojrensk zkuebn stav
+- sttn-opera-praha-nrodn-divadlo.png — 11KB, sttn opera praha nrodn divadlo
+- svg-470d91c6.svg — 2KB, svg 470d91c6
+- svg-a5fd4a31.svg — 4KB, svg a5fd4a31
+- svg-e9121ff7.svg — 1KB, svg e9121ff7
+- svg-f50e0eac.svg — 1KB, svg f50e0eac
+- technick-univerzita-v-liberci.png — 44KB, technick univerzita v liberci
+- tep-factor.png — 21KB, tep factor
+- tf-logo-black-480x170.png — 10KB, tf logo black 480x170
+- traktor.jpg — 176KB, "VOŠ a SOŠ zemědělsko-technická Bystřice n.P. 2", section: "Pasport stavby", above fold
+- tul-text-3radky-cz-colour-rgb-480x251.png — 20KB, tul text 3radky cz colour rgb 480x251
+- tul-univerzitn-knihovna.png — 306KB, tul univerzitn knihovna
+- tv-noe-logo-480x136.jpeg — 12KB, "tv-noe-logo", section: "Pasport stavby"
+- tv-noe-logo.jpeg — 20KB, "tv-noe-logo", section: "Pasport stavby"
+- umlecko-prmyslov-kola-frdek-mstek.png — 287KB, umlecko prmyslov kola frdek mstek
+- umprum.png — 527KB, "Umělecko-průmyslová škola, Frýdek-místek", section: "Pasport stavby", above fold
+- universitat-pardubice-logo-svg-480x256.png — 19KB, universitat pardubice logo svg 480x256
+- univerzita-je-purkyn.png — 35KB, univerzita je purkyn
+- univerzita-karlova.png — 784KB, univerzita karlova
+- univerzita-palackeho-v-olomouci-logo-480.png — 18KB, univerzita palackeho v olomouci logo 480
+- univerzita-palackho-v-olomouci.png — 20KB, univerzita palackho v olomouci
+- univerzita-pardubice.png — 43KB, univerzita pardubice
+- untitled-1.png — 651KB, untitled 1
+- untitled-10.png — 530KB, untitled 10
+- untitled-12.png — 673KB, untitled 12
+- untitled-3.png — 605KB, untitled 3
+- untitled-5.png — 663KB, untitled 5
+- velk-pardubick.jpg — 41KB, velk pardubick
+- vila-stiassni.jpg — 40KB, vila stiassni
+- vo-a-so-zemdlsko-technick-bystice-np-2.jpg — 40KB, vo a so zemdlsko technick bystice np 2
+- vo-a-sp-dopravn.png — 30KB, vo a sp dopravn
+- vp-zaznam-01.jpg — 108KB, vp zaznam 01
+- vykres4.jpg — 86KB, "Pasport stavby Brno: Jak na digitalizaci budov", in: entry-featured-image-url
+- vysok-uen-technick-v-brn.png — 25KB, vysok uen technick v brn
+- web-2026-reference-hala-havirov-04a.jpg — 49KB, web 2026 reference hala havirov 04a
+- web-2026-reference-hala-havirov-04b.jpg — 58KB, web 2026 reference hala havirov 04b
+- web-2026-reference-rd-krkonose-03a.jpg — 44KB, web 2026 reference rd krkonose 03a
+- web-2026-reference-rd-krkonose-03b.jpg — 52KB, web 2026 reference rd krkonose 03b
+- web-2026-reference-zs-liberec06a.jpg — 59KB, web 2026 reference zs liberec06a
+- web-2026-reference-zs-liberec06b.jpg — 67KB, web 2026 reference zs liberec06b
+- web-2026-uvod-jak-vznika-pasport-skenova.jpg — 22KB, web 2026 uvod jak vznika pasport skenova
+- z-rychvald.png — 180KB, z rychvald
+- zamek-slavkov-bronze-480x201.png — 24KB, zamek slavkov bronze 480x201
+- zkladn-kola-spojenc-1408.jpg — 38KB, zkladn kola spojenc 1408
+- zmek-slavkov.png — 55KB, zmek slavkov
+- zu-kyjov.jpg — 41KB, zu kyjov
+- zu-leoe-janka-frdlant-nad-ostravic.jpg — 52KB, zu leoe janka frdlant nad ostravic
+- svgs/logo-d0139ec6-2.svg — logo d0139ec6 2
+- svgs/logo-d0139ec6.svg — logo d0139ec6
+- fonts/7cHrv4kjgoGqM7E_Cfs1wHo.ttf — font file
+- fonts/7cHsv4kjgoGqM7E_CfOQ4mogvT8.ttf — font file
+- fonts/7cHsv4kjgoGqM7E_CfP04WogvT8.ttf — font file
+- fonts/7cHsv4kjgoGqM7E_CfPI42ogvT8.ttf — font file
+- fonts/7cHsv4kjgoGqM7E_CfPk5GogvT8.ttf — font file
+- fonts/7cHtv4kjgoGqM7E_CfNY8HMJnQ.ttf — font file
+- fonts/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf — font file

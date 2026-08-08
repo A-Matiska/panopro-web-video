@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<title>PANOPRO — Proc pasport</title>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+  @font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: url('capture/assets/fonts/barlow-700-latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  @font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: url('capture/assets/fonts/barlow-700-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 800;
+    src: url('capture/assets/fonts/barlow-800-latin-ext.woff2') format('woff2');
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  @font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 800;
+    src: url('capture/assets/fonts/barlow-800-latin.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('capture/assets/fonts/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf') format('truetype');
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #111; }
+  #video-root {
+    font-family: "Barlow", "Open Sans", sans-serif;
+    color: #333333;
+  }
+  .beat {
+    position: absolute;
+    inset: 0;
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    overflow: hidden;
+  }
+  #b01 { opacity: 1; }
+
+  /* ---------- Beat C1 : question ---------- */
+  #b01 { background: #F4F4F4; }
+  .c1-cam { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+  .c1-headline {
+    max-width: 1420px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 1.22;
+    color: #1F3647;
+  }
+  .c1w { display: inline-block; }
+  .hl-wrap { position: relative; display: inline-block; padding: 0 18px; margin: 0 -18px; }
+  .hl-block {
+    position: absolute;
+    left: 0; top: -8px; bottom: -8px;
+    width: 0%;
+    background: #41597B;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .hl-white {
+    position: absolute;
+    left: 18px; top: 8px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 1.22;
+  }
+  .c1-chip {
+    position: absolute;
+    top: 60px; left: 60px;
+    background: #41597B;
+    border-radius: 2px;
+    padding: 22px 30px;
+    display: flex;
+    align-items: center;
+  }
+  .c1-chip img { height: 46px; display: block; }
+
+  /* ---------- Beat C2 : reality vs old drawings ---------- */
+  #b02 { background: #F4F4F4; }
+  .c2-cam { position: absolute; inset: 0; }
+  .c2-cam img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0.45);
+  }
+  .c2-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .c2-marker {
+    position: absolute;
+    left: 1010px;
+    top: 250px;
+    width: 620px;
+    height: 400px;
+    transform: rotate(-4deg);
+  }
+  .c2-card {
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    padding: 46px 60px;
+    box-shadow: 0 10px 40px rgba(31, 54, 71, 0.18);
+  }
+  .c2-card p {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.2;
+    color: #1F3647;
+  }
+
+  /* ---------- Beat C3 : the solution band ---------- */
+  #b03 { background: #F4F4F4; }
+  .c3-band {
+    position: absolute;
+    inset: 0;
+    background: #41597B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .c3-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+    text-align: center;
+  }
+  .c3-badge {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 76px;
+    color: #FFFFFF;
+  }
+  .c3-line {
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 1.18;
+    color: #FFFFFF;
+  }
+  .c3-rule {
+    width: 220px;
+    height: 4px;
+    background: #FFFFFF;
+    border-radius: 2px;
+  }
+
+  /* ---------- Beat C4 : three deliverable cards ---------- */
+  #b04 { background: #FFFFFF; }
+  .c4-row {
+    display: flex;
+    gap: 60px;
+    align-items: stretch;
+    justify-content: center;
+  }
+  .c4-card {
+    width: 520px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .c4-imgwrap { height: 340px; overflow: hidden; }
+  .c4-card img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    display: block;
+  }
+  .c4-label {
+    background: #1F3647;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 34px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    padding: 28px 0;
+  }
+
+  /* ---------- Beat C5 : CTA ---------- */
+  #b05 { background: #41597B; }
+  .c5-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+  }
+  .c5-logo { width: 460px; display: block; }
+  .c5-btn {
+    background: #FFFFFF;
+    color: #41597B;
+    font-weight: 800;
+    font-size: 52px;
+    letter-spacing: 0.04em;
+    border-radius: 2px;
+    padding: 24px 64px;
+  }
+  .c5-domain-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .c5-domain {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.05em;
+  }
+  .c5-underline {
+    width: 100%;
+    height: 3px;
+    background: #FFFFFF;
+    transform-origin: left center;
+  }
+</style>
+</head>
+<body>
+
+<div id="video-root" data-composition-id="video" data-width="1920" data-height="1080" data-start="0" data-duration="15" style="position:relative;width:1920px;height:1080px;">
+
+  <!-- C1 : 0-3s question -->
+  <div class="beat" id="b01">
+    <div class="c1-cam" id="c1-cam">
+      <h1 class="c1-headline">
+        <span class="c1w">Máte</span>
+        <span class="c1w hl-wrap">AKTUÁLNÍ<span class="hl-block" id="c1-hl" data-layout-ignore><span class="hl-white">AKTUÁLNÍ</span></span></span>
+        <span class="c1w">dokumentaci</span>
+        <span class="c1w">své</span>
+        <span class="c1w">budovy?</span>
+      </h1>
+    </div>
+    <div class="c1-chip" id="c1-chip">
+      <img src="capture/assets/panopro.png" alt="PANOPRO">
+    </div>
+  </div>
+
+  <!-- C2 : 3-6s reality differs from old drawings -->
+  <div class="beat" id="b02">
+    <div class="c2-cam" id="c2-cam">
+      <img src="capture/assets/2d-vkresy-pasportu-stavby-pdorys-a-dokum.jpg" alt="Starý 2D výkres">
+      <div class="c2-overlay"></div>
+    </div>
+    <svg class="c2-marker" viewBox="0 0 620 400" fill="none" xmlns="http://www.w3.org/2000/svg" data-layout-ignore>
+      <ellipse id="c2-ellipse" cx="310" cy="200" rx="280" ry="160"
+               stroke="#cf2e2e" stroke-width="10" fill="none" stroke-linecap="round"/>
+    </svg>
+    <div class="c2-card" id="c2-card">
+      <p>Realita se od starých<br>výkresů liší.</p>
+    </div>
+  </div>
+
+  <!-- C3 : 6-9s solution band -->
+  <div class="beat" id="b03">
+    <div class="c3-band" id="c3-band">
+      <div class="c3-content" id="c3-content">
+        <div class="c3-badge" id="c3-badge">§</div>
+        <div>
+          <div class="c3-line" id="c3-line1">Řešení: pasport stavby</div>
+          <div class="c3-line" id="c3-line2">dle vyhlášky 131/2024 Sb.</div>
+        </div>
+        <div class="c3-rule" id="c3-rule" data-layout-ignore></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- C4 : 9-12s three deliverables -->
+  <div class="beat" id="b04">
+    <div class="c4-row" id="c4-row">
+      <div class="c4-card" id="c4-card1">
+        <div class="c4-imgwrap"><img id="c4-img1" src="capture/assets/pasport-pointcloud-01-480x327.jpg" alt="Mračno bodů"></div>
+        <div class="c4-label">MRAČNO BODŮ</div>
+      </div>
+      <div class="c4-card" id="c4-card2">
+        <div class="c4-imgwrap"><img id="c4-img2" src="capture/assets/3d-model-domu-ve-formtu-rvt-vstup-paspor.jpg" alt="3D model"></div>
+        <div class="c4-label">3D MODEL</div>
+      </div>
+      <div class="c4-card" id="c4-card3">
+        <div class="c4-imgwrap"><img id="c4-img3" src="capture/assets/2d-vkresy-pasportu-stavby-pdorys-a-dokum.jpg?u=c4" alt="2D výkresy"></div>
+        <div class="c4-label">2D VÝKRESY</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- C5 : 12-15s CTA -->
+  <div class="beat" id="b05">
+    <div class="c5-col" id="c5-col">
+      <img class="c5-logo" id="c5-logo" src="capture/assets/panopro.png?u=cta" alt="PANOPRO">
+      <div class="c5-btn" id="c5-btn">KALKULACE ZDARMA</div>
+      <div class="c5-domain-wrap">
+        <div class="c5-domain" id="c5-domain">panopro.cz</div>
+        <div class="c5-underline" id="c5-underline" data-layout-ignore></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function () {
+  function el(id) { return document.getElementById(id); }
+
+  var b01 = el("b01"), b02 = el("b02"), b03 = el("b03"), b04 = el("b04"), b05 = el("b05");
+  if (!b01 || !b02 || !b03 || !b04 || !b05) { return; }
+
+  window.__timelines = window.__timelines || {};
+  var tl = gsap.timeline({ paused: true });
+
+  /* ================= C1 : 0 - 3 ================= */
+  tl.fromTo(b01, { scale: 1.012 }, { scale: 1, duration: 0.25, ease: "power2.out" }, 0);
+
+  // headline words rise in
+  tl.fromTo(".c1w",
+    { y: 60, opacity: 0 },
+    { y: 0, opacity: 1, duration: 0.6, ease: "power4.out", stagger: 0.09 }, 0.05);
+
+  // logo chip settles in top-left (visible from frame 0 so the poster frame is not blank)
+  tl.fromTo(el("c1-chip"),
+    { y: -24 },
+    { y: 0, duration: 0.55, ease: "power4.out" }, 0.1);
+
+  // highlight sweep behind "AKTUÁLNÍ" (word flips to white inside the block)
+  tl.fromTo(el("c1-hl"),
+    { width: "0%" },
+    { width: "100%", duration: 0.55, ease: "power3.inOut" }, 1.0);
+
+  // camera dolly for the hold
+  tl.fromTo(el("c1-cam"),
+    { scale: 1.0 },
+    { scale: 1.05, duration: 2.7, ease: "none" }, 0.3);
+
+  /* ================= C2 : 3 - 6 ================= */
+  tl.set(b01, { opacity: 0 }, 3);
+  tl.set(b02, { opacity: 1 }, 3);
+  tl.fromTo(b02, { scale: 1.012 }, { scale: 1, duration: 0.25, ease: "power2.out" }, 3);
+
+  // slow drift across the old drawing
+  tl.fromTo(el("c2-cam"),
+    { scale: 1.08, x: 0 },
+    { scale: 1.16, x: -40, duration: 3, ease: "none" }, 3);
+
+  // red ellipse draws itself around the discrepancy spot
+  tl.fromTo(el("c2-ellipse"),
+    { strokeDashoffset: 1400, strokeDasharray: 1400 },
+    { strokeDashoffset: 0, duration: 1.0, ease: "power2.inOut" }, 3.35);
+
+  // white text card slides in bottom-left
+  tl.fromTo(el("c2-card"),
+    { x: -90, opacity: 0 },
+    { x: 0, opacity: 1, duration: 0.6, ease: "power4.out" }, 3.5);
+
+  /* ================= C3 : 6 - 9 ================= */
+  tl.set(b02, { opacity: 0 }, 6);
+  tl.set(b03, { opacity: 1 }, 6);
+  tl.fromTo(b03, { scale: 1.012 }, { scale: 1, duration: 0.25, ease: "power2.out" }, 6);
+
+  // full brand band slides in from the left
+  tl.fromTo(el("c3-band"),
+    { xPercent: -100 },
+    { xPercent: 0, duration: 0.7, ease: "expo.out" }, 6.02);
+
+  // paragraph badge pops (rides in with the band — no empty-band window)
+  tl.fromTo(el("c3-badge"),
+    { scale: 0.6, opacity: 0 },
+    { scale: 1, opacity: 1, duration: 0.55, ease: "back.out(1.7)" }, 6.3);
+
+  // headline lines land
+  tl.fromTo(el("c3-line1"),
+    { y: 50, opacity: 0 },
+    { y: 0, opacity: 1, duration: 0.6, ease: "power4.out" }, 6.45);
+  tl.fromTo(el("c3-line2"),
+    { y: 50, opacity: 0 },
+    { y: 0, opacity: 1, duration: 0.6, ease: "power4.out" }, 6.58);
+
+  // thin rule grows
+  tl.fromTo(el("c3-rule"),
+    { scaleX: 0, opacity: 0, transformOrigin: "center center" },
+    { scaleX: 1, opacity: 1, duration: 0.5, ease: "expo.out" }, 6.9);
+
+  // hold dolly
+  tl.fromTo(el("c3-content"),
+    { scale: 1.0 },
+    { scale: 1.05, duration: 2.0, ease: "none" }, 7.0);
+
+  /* ================= C4 : 9 - 12 ================= */
+  tl.set(b03, { opacity: 0 }, 9);
+  tl.set(b04, { opacity: 1 }, 9);
+  tl.fromTo(b04, { scale: 1.012 }, { scale: 1, duration: 0.25, ease: "power2.out" }, 9);
+
+  // three cards stagger in
+  tl.fromTo([el("c4-card1"), el("c4-card2"), el("c4-card3")],
+    { y: 60, opacity: 0 },
+    { y: 0, opacity: 1, duration: 0.65, ease: "power4.out", stagger: 0.12 }, 9.15);
+
+  // inner image zooms for continuous life
+  tl.fromTo([el("c4-img1"), el("c4-img2"), el("c4-img3")],
+    { scale: 1.0 },
+    { scale: 1.07, duration: 2.1, ease: "none", stagger: 0.05 }, 9.8);
+
+  // row dolly
+  tl.fromTo(el("c4-row"),
+    { scale: 1.0 },
+    { scale: 1.04, duration: 2.2, ease: "none" }, 9.8);
+
+  /* ================= C5 : 12 - 15 ================= */
+  tl.set(b04, { opacity: 0 }, 12);
+  tl.set(b05, { opacity: 1 }, 12);
+  tl.fromTo(b05, { scale: 1.012 }, { scale: 1, duration: 0.25, ease: "power2.out" }, 12);
+
+  // white logo rises
+  tl.fromTo(el("c5-logo"),
+    { y: 50, opacity: 0 },
+    { y: 0, opacity: 1, duration: 0.6, ease: "power4.out" }, 12.1);
+
+  // CTA button pops
+  tl.fromTo(el("c5-btn"),
+    { scale: 0.9, opacity: 0 },
+    { scale: 1, opacity: 1, duration: 0.6, ease: "back.out(1.7)" }, 12.5);
+
+  // domain fades in, underline draws
+  tl.fromTo(el("c5-domain"),
+    { y: 30, opacity: 0 },
+    { y: 0, opacity: 1, duration: 0.5, ease: "expo.out" }, 12.9);
+  tl.fromTo(el("c5-underline"),
+    { scaleX: 0 },
+    { scaleX: 1, duration: 0.5, ease: "power3.inOut" }, 13.15);
+
+  // closing hold dolly
+  tl.fromTo(el("c5-col"),
+    { scale: 1.0 },
+    { scale: 1.04, duration: 1.3, ease: "none" }, 13.6);
+
+  window.__timelines["video"] = tl;
+})();
+</script>
+
+</body>
+</html>

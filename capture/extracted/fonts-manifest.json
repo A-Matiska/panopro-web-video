@@ -1,0 +1,127 @@
+{
+  "files": [
+    {
+      "file": "7cHrv4kjgoGqM7E_Cfs1wHo.ttf",
+      "family": "Barlow",
+      "rawFamily": "Barlow",
+      "subfamily": "Italic",
+      "postscript": "Barlow-Italic",
+      "weight": 400,
+      "style": "italic",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "7cHsv4kjgoGqM7E_CfOQ4mogvT8.ttf",
+      "family": "Barlow",
+      "rawFamily": "Barlow Light",
+      "subfamily": "Italic",
+      "postscript": "Barlow-LightItalic",
+      "weight": 300,
+      "style": "italic",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "7cHsv4kjgoGqM7E_CfP04WogvT8.ttf",
+      "family": "Barlow",
+      "rawFamily": "Barlow ExtraLight",
+      "subfamily": "Italic",
+      "postscript": "Barlow-ExtraLightItalic",
+      "weight": 275,
+      "style": "italic",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "7cHsv4kjgoGqM7E_CfPI42ogvT8.ttf",
+      "family": "Barlow",
+      "rawFamily": "Barlow Medium",
+      "subfamily": "Italic",
+      "postscript": "Barlow-MediumItalic",
+      "weight": 500,
+      "style": "italic",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "7cHsv4kjgoGqM7E_CfPk5GogvT8.ttf",
+      "family": "Barlow",
+      "rawFamily": "Barlow SemiBold",
+      "subfamily": "Italic",
+      "postscript": "Barlow-SemiBoldItalic",
+      "weight": 600,
+      "style": "italic",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "7cHtv4kjgoGqM7E_CfNY8HMJnQ.ttf",
+      "family": "Barlow",
+      "rawFamily": "Barlow Thin",
+      "subfamily": "Italic",
+      "postscript": "Barlow-ThinItalic",
+      "weight": 250,
+      "style": "italic",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    },
+    {
+      "file": "memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf",
+      "family": "Open Sans",
+      "rawFamily": "Open Sans",
+      "subfamily": "Regular",
+      "postscript": "OpenSans-Regular",
+      "weight": 400,
+      "style": "normal",
+      "variationAxes": [],
+      "identified": true,
+      "isIcon": false
+    }
+  ],
+  "families": [
+    {
+      "family": "Barlow",
+      "weights": [
+        250,
+        275,
+        300,
+        400,
+        500,
+        600
+      ],
+      "variable": false,
+      "fileCount": 6,
+      "files": [
+        "7cHrv4kjgoGqM7E_Cfs1wHo.ttf",
+        "7cHsv4kjgoGqM7E_CfOQ4mogvT8.ttf",
+        "7cHsv4kjgoGqM7E_CfP04WogvT8.ttf",
+        "7cHsv4kjgoGqM7E_CfPI42ogvT8.ttf",
+        "7cHsv4kjgoGqM7E_CfPk5GogvT8.ttf",
+        "7cHtv4kjgoGqM7E_CfNY8HMJnQ.ttf"
+      ]
+    },
+    {
+      "family": "Open Sans",
+      "weights": [
+        400
+      ],
+      "variable": false,
+      "fileCount": 1,
+      "files": [
+        "memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVc.ttf"
+      ]
+    }
+  ],
+  "unidentified": [],
+  "meta": {
+    "generatedAt": "2026-08-02T12:43:57.966Z",
+    "tool": "fontkit"
+  }
+}
